@@ -5,24 +5,15 @@ use PHPUnit\Framework\TestCase;
 
 class VendorTest extends TestCase
 {
+
+
     /** @test */
     public function vendor_can_only_own_single_store()
     {
         $vendor = new Vendor();
 
-        $store_count = $vendor->get_store_count();
-
-        $this->assertEquals(1, $store_count);
-
-    }
-
-    /** @test */
-    public function vendor_can_only_own_single_store2()
-    {
-        $vendor = new Vendor();
-
-        $this->assertEquals(true, $vendor->addStore(1));
-        $this->assertEquals(false, $vendor->addStore(2));
+        $this->assertEquals(true, $vendor->setStore(1));
+        $this->assertEquals(false, $vendor->setStore(2));
 
     }
 

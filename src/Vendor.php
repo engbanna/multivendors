@@ -14,7 +14,7 @@ class Vendor
         return 1;
     }
 
-    public function addStore($id){
+    public function setStore($id){
         if($this->store_id == 0){
             $this->store_id= $id;
             return true;

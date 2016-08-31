@@ -9,17 +9,20 @@
 
 class Auth
 {
+
+    static $user_id = 5;
     public static function user(){
         $user = new User();
-        $user->id = 5;
+        $user->id = self::$user_id;
         $user->name = 'Mohammed Albanna';
         $user->role = 'vendor';
         return $user;
     }
 
-    /*public static function loginUsingId($id){
-        //todo
+    public static function loginUsingId($id){
+        self::$user_id = $id;
         return true;
-    }*/
+    }
+
 
 }

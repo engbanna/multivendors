@@ -33,8 +33,7 @@ class Vendor
 
 
     public function getStore(){
-        $store = new Store();
-        return $store;
+        return $this->store_id;
     }
 
 

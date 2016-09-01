@@ -6,10 +6,8 @@
  * Time: 12:00 PM
  */
 
-
 class Auth
 {
-
     static $user_id = 5;
     public static function user(){
         $user = new User();

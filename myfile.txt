@@ -1,10 +1,26 @@
-Hi
-How are you
+Home Work
+1- What's the differernces between (assertSame, assertEquals).
+2- How to enform the IDE with your function parameters?
+3-How to make Singlton in Laravel
+4-  Diff Overidden vs Overloading
+-----------------------------------------------------------
+1- What's the differernces between (assertSame, assertEquals).
+assertSame: "Reports an error identified by $message if the two variables $expected and $actual do not have the same type and value."
 
-hii
+And as you can see in the example below the above excerpt, they are passing '2204' and 2204, which will fail using assertSame because one is a string and one is an int, basically:
 
-third modification
+'2204' !== 2204
+assertSame('2204', 2204) // this test fails
+assertEquals: "Reports an error identified by $message if the two variables $expected and $actual are not equal."
 
-mod5
+assertEquals does not appear to take datatype into consideration so using the above example of 2204:
 
-branch2 moh1
+'2204' == 2204
+assertEquals('2204', 2204) // this test passes
+-----------------------------------------------------------
+2-How to enform the IDE with your function parameters?
+By useing PHPDock blocks (Alt+Insert).
+-----------------------------------------------------------
+3-How to make Singlton in Laravel
+
+-----------------------------------------------------------

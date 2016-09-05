@@ -21,6 +21,6 @@ assertEquals('2204', 2204) // this test passes
 2-How to enform the IDE with your function parameters?
 By useing PHPDock blocks (Alt+Insert).
 -----------------------------------------------------------
-3-How to make Singlton in Laravel
+3-How to make Singleton in Laravel
 
 -----------------------------------------------------------
